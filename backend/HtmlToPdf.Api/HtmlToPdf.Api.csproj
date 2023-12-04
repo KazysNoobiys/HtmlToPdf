@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="htmlFiles\**" />
+    <Content Remove="htmlFiles\**" />
+    <EmbeddedResource Remove="htmlFiles\**" />
+    <None Remove="htmlFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlToPdf.Common\HtmlToPdf.Common.csproj" />
+    <ProjectReference Include="..\HtmlToPdf.Microservice.Contracts\HtmlToPdf.Microservice.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

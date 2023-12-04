@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlToPdf.Common\HtmlToPdf.Common.csproj" />
+    <ProjectReference Include="..\HtmlToPdf.Microservice.Common\HtmlToPdf.Microservice.Common.csproj" />
+    <ProjectReference Include="..\HtmlToPdf.Microservice.Contracts\HtmlToPdf.Microservice.Contracts.csproj" />
+    <ProjectReference Include="..\HtmlToPdf.Microservice.Dal\HtmlToPdf.Microservice.Dal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandHandlers\" />
+    <Folder Include="QueryHandlers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Abstractions" Version="8.1.2" />
+  </ItemGroup>
+
+</Project>

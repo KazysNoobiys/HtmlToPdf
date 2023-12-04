@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+    background: aliceblue;
+    border: solid 1px;
+    margin-bottom: 2px;
+}
+
+.btn{
+    margin-left: 20px;
+    padding: 2px;
+}
+
+.uploadHtmlBtn{
+    align-self: flex-end;
+    height: 30px;
+    margin: 5px;
+
+}
+.inputHtmlFile{
+    align-self: flex-end;
+    height: 30px;
+    margin-top: 20px;
+}
